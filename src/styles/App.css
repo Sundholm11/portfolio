@@ -31,3 +31,13 @@ div.subContainer {
 	background-color: rgb(27, 28, 29);
 	text-align: center;
 }
+
+div.subContainer2 {
+	margin: 0;
+	float: left;
+	height: 600px;
+	width: 50%;
+	line-height: 600px;
+	background-color: white;
+	text-align: center;
+}
