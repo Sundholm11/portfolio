@@ -1,0 +1,33 @@
+.App {
+	text-align: center;
+}
+
+h1 {
+	font-size: 300%;
+	background-color: #111;
+	padding: 20px;
+	margin: 0;
+	color: white;
+}
+
+p {
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1.home {
+	color: white;
+	background-color:rgb(27, 28, 29);
+	padding: 20px;
+	margin: 0;
+	vertical-align: middle;
+	font-family: 'Segoe UI';
+	font-size: 400%;
+	font-weight: lighter;
+}
+
+div.subContainer {
+	height: 600px;
+	line-height: 600px;
+	background-color: rgb(27, 28, 29);
+	text-align: center;
+}
