@@ -2,40 +2,32 @@ import React, { useState } from 'react'
 
 import '../styles/Projects.css'
 
-const Projects: React.FC = () => {
-	const[project, setProject] = useState<string>("Some project")
+import Background from '../images/test.JPG'
 
-	const projects = [
-		"Some project",
-		"Another project",
-		"Third project"
-	]
+const Projects: React.FC = () => {
+	const[projects, setProjects] = useState<Array<Object>>([])
+	const[focusedProject, setFocusedProject] = useState<Object>()
 
 	const handleProjectChange = (event: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
-		setProject(projects[event.currentTarget.value])
+		setFocusedProject(projects[event.currentTarget.value])
 	}
 
 	return (
 		<div className="projectsMainContainer">
 			<div className="projectsLeftContainer">
 				<ul className="projectsVertNav">
-					<li className="projectsVertNav">
-						<h3>Projects</h3>
-					</li>
+					<h2 className="projects">Projects</h2>
+					<p className="description">All those fancy little things that I've spent countless of hours,
+						day and night, to create
+					</p>
+					<hr className="divider" />
 					<li className="projectsVertNav"
 						value={0}
-						onClick={handleProjectChange}>Some project
+						onClick={handleProjectChange}>Chat-app
 					</li>
-					<li className="projectsVertNav"
-						value={1}
-						onClick={handleProjectChange}>Another project</li>
-					<li className="projectsVertNav"
-						value={2}
-						onClick={handleProjectChange}>Third project</li>
 				</ul>
 			</div>
-			<div className="projectsRightContainer">
-				{project}
+			<div className="projectsRightContainer" style={{ backgroundImage: `url(${Background})` }}>
 			</div>
 		</div>
 	)
