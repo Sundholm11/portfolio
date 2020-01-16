@@ -1,0 +1,29 @@
+div.projectsMainContainer {
+	margin: 15% 5% 5%;
+	border: 2px solid;
+	border-radius: 25px;
+}
+
+div.projectsRightContainer {
+	width: 74%;
+	padding: 350px 0;
+	margin-left: 25%;
+	border-left: 2px solid;
+}
+
+div.projectsLeftContainer {
+	width: 24%;
+	margin-left: 1%;
+}
+
+ul.projectsVertNav {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+	list-style-type: none;
+}
+
+li.projectsVertNav {
+	padding: 20px 0;
+}

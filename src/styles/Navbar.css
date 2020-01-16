@@ -1,15 +1,15 @@
-p {
+p.navBar {
 	line-height: 2px;
 }
 
-ul {
+ul.navBar {
 	list-style: none;
 	background-color: rgb(27, 28, 29);
 	margin: 0;
 	padding: 0;
 }
 
-li {
+li.navBar {
 	display: inline-block;
 	color: white;
 	text-align: center;
@@ -19,6 +19,6 @@ li {
 	border-bottom-color:  rgb(27, 28, 29);
 }
 
-li:hover {
+li.navBar:hover {
 	border-bottom-color: white;
 }

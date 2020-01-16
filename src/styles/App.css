@@ -1,16 +1,5 @@
 .App {
 	text-align: center;
-}
-
-h1 {
-	font-size: 300%;
-	background-color: #111;
-	padding: 20px;
-	margin: 0;
-	color: white;
-}
-
-p {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -25,19 +14,22 @@ h1.home {
 	font-weight: lighter;
 }
 
-div.subContainer {
-	height: 600px;
-	line-height: 600px;
+div.homeContainer {
+	padding: 300px 0;
 	background-color: rgb(27, 28, 29);
-	text-align: center;
 }
 
-div.subContainer2 {
-	margin: 0;
-	float: left;
-	height: 600px;
-	width: 50%;
-	line-height: 600px;
+/*
+Some rough button styles
+
+button {
+	font-family: Georgia;
+	border: 0;
 	background-color: white;
-	text-align: center;
+	cursor: pointer;
 }
+
+button:focus {
+	outline: 0;
+}
+*/
