@@ -40,6 +40,13 @@ ul.projectsVertNav {
 }
 
 li.projectsVertNav {
-	padding: 20px 0;
+	margin: 10px 0;
+	padding: 15px 0;
 	text-align: left;
+	transition: font-size 0.05s;
+}
+
+li.projectsVertNav:hover {
+	font-size: 110%;
+	cursor: pointer;
 }

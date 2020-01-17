@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 
 import '../styles/Projects.css'
 
-import chatappBackground from '../images/test.JPG'
+import chatappBackground from '../images/chatapp.jpg'
+import fullstackBackground from '../images/fullstackopen2019img.jpg'
+import ilmoplaseBackground from '../images/ilmoplaseimg.jpg'
 
 interface Project {
 	id: number,
@@ -25,8 +27,8 @@ const Projects: React.FC = () => {
 	const initProjects = () => {
 		const initialProjects = [
 			{ id: 0, name: "Chat-app", bgImg: chatappBackground },
-			{ id: 1, name: "Fullstackopen 2019", bgImg: chatappBackground},
-			{ id: 2, name: "Ilmot-plaseeraus", bgImg: chatappBackground}
+			{ id: 1, name: "Fullstackopen 2019", bgImg: fullstackBackground},
+			{ id: 2, name: "Ilmot-plaseeraus", bgImg: ilmoplaseBackground}
 		]
 		setFocusedProject(initialProjects[0])
 		setProjects(projects.concat(initialProjects))
