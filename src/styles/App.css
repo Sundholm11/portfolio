@@ -18,18 +18,3 @@ div.homeContainer {
 	padding: 250px 0;
 	background-color: rgb(27, 28, 29);
 }
-
-/*
-Some rough button styles
-
-button {
-	font-family: Georgia;
-	border: 0;
-	background-color: white;
-	cursor: pointer;
-}
-
-button:focus {
-	outline: 0;
-}
-*/

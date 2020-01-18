@@ -4,13 +4,29 @@ h2.projects {
 	font-weight: lighter;
 }
 
-p.description {
+p.descriptionProjects {
 	text-align: left;
+}
+
+h2.focusedProject {
+	font-size: 200%;
+	font-weight: lighter;
+	color: black;
+	margin: 5% 10%;
+	text-align: left;
+}
+
+p.focusedDescription {
+	margin: 0 10%;
+	color: black;
+	text-align: justify;
+	font-weight: lighter;
 }
 
 hr.divider {
 	margin: 0;
 	width: 20%;
+	color: gray;
 }
 
 div.projectsMainContainer {
@@ -22,13 +38,37 @@ div.projectsRightContainer {
 	width: 69%;
 	margin-left: 30%;
 	height: 700px;
-	opacity: 0.9;
-	filter: blur(3px);
 }
 
 div.projectsLeftContainer {
 	width: 24%;
 	margin-left: 1%;
+}
+
+div.backgroundProject {
+	display: inline-block;
+	height: 100%;
+	width: 49%;
+	opacity: 0.97;
+}
+
+div.focusedProject {
+	height: 100;
+	width: 49%;
+	float: left;
+	border-left: 1px solid;
+	border-color: gray;
+}
+
+div.triangleRight {
+	margin: 0 5%;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 10px solid rgb(27, 28, 29);
+	border-bottom: 5px solid transparent;
+	border-radius: 4px;
 }
 
 ul.projectsVertNav {
