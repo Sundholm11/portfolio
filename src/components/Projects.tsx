@@ -30,8 +30,8 @@ const Projects: React.FC = () => {
 
 	const handleProjectChange = (event: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
 		const newFocusedProject = {...projects[event.currentTarget.value], active: true }
-		const updatedProjects = projects.map(p => p.id === focusedProject?.id || p.id === newFocusedProject.id ?
-			{...p, active: !p.active} : p)
+		const firstUpdate = projects.map(p => p.id === focusedProject?.id ? {...p, active: false} : p)
+		const updatedProjects = firstUpdate.map(p => p.id === newFocusedProject.id ? newFocusedProject : p)
 		setFocusedProject(newFocusedProject)
 		setProjects(updatedProjects)
 	}
@@ -83,14 +83,14 @@ const Projects: React.FC = () => {
 					<h2 className="focusedProject">{focusedProject?.name}</h2>
 					{focusedProject?.description?.map(part => {
 						return (
-							<div>
+							<div key={Math.random() * 1000}>
 								<p className="focusedDescription">{part}</p>
 								<br/>
 							</div>
 						)})}
 					{focusedProject?.links?.map(link => {
 						return (
-							<a className="focusedLink" href={`${link.url}`}>{link.name}</a>
+							<a key={Math.random() * 1000} className="focusedLink" href={`${link.url}`}>{link.name}</a>
 						)})}
 				</div>
 				<div className="backgroundProject" style={{ backgroundImage: `url(${focusedProject?.bgImg})` }} />
