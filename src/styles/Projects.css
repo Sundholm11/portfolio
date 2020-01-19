@@ -23,6 +23,20 @@ p.focusedDescription {
 	font-weight: lighter;
 }
 
+a.focusedLink {
+	margin-left: 10%;
+	float: left;
+	text-decoration: none;
+}
+
+a.focusedLink:link {
+	color: dodgerblue;
+}
+
+a.focusedLink:visited {
+	color: dodgerblue;
+}
+
 hr.divider {
 	margin: 0;
 	width: 20%;
