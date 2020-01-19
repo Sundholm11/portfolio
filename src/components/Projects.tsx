@@ -52,8 +52,32 @@ const Projects: React.FC = () => {
 					{ name: "Github", url: "https://github.com/Sundholm11/chat-app" },
 					{ name: "Heroku/Deploy", url: "https://incredible-chatapp.herokuapp.com/" }
 				]},
-			{ id: 1, name: "Fullstackopen 2019", bgImg: fullstackBackground, active: false},
-			{ id: 2, name: "Ilmot-plaseeraus", bgImg: ilmoplaseBackground, active: false}
+			{ id: 1, name: "Fullstackopen 2019", bgImg: fullstackBackground, active: false, 
+				description: [
+					`Fullstackopen 2019, organized by the University of Helsinki, was one of the heaviest courses that I've taken part of. At the start of the course, I had only a very basic understanding of how JS, CSS 
+					and HTML even work. After 125 hours of sometimes pleasant ride, but the other half being the bumpy sweat and tears ride, I can say it was totally worth it. My understanding of web development is on a 
+					completely new higher level, whilst my skills with the use of JS have risen incredibly. I've got to known the beauties of React and Redux, with competent use of Node.js with Express for the backend 
+					side development as well.`,
+					`During the fullstackopen, I was tasked to make several smaller pages filling few requirements to show off that I've learned those things. At times I wasn't super filled with eagerness to carry out 
+					the same things over and over again. But however inspired by this course, and shortly after it, I managed to start working on my first full project, the chat-app.`
+				],
+				links: [
+					{ name: "Github", url: "https://github.com/Sundholm11/fullstackopen2019" }
+				]},
+			{ id: 2, name: "Ilmot-plaseeraus", bgImg: ilmoplaseBackground, active: false,
+				description: [
+					`Perhaps one of the most interesting uni assignments this far that I've taken part of. We were tasked to make a project that was to be presented for all the other groups -super simple task, but to make 
+					it a slightly bit more interesting, together with my partner we thought about picking a project that would later benefit our students' association. As a first year students, we didn't have that much 
+					actual experience with coding yet, not to mention that Python wasn't our most used language by then. But after some small debates few some older students about a preferable -and doable- task, we decided 
+					to go for it.`,
+					`Ilmot-plaseeraus is an automated seating generator for mainly sitz events - but cannot see a reason why one couldn't use it for other events as well with a little fine tuning. The placing algorithm, 
+					mostly created by my partner, will receive a list of persons, and return them in a sorted order for tables - taking things such as genders and friends to account. Not used for our students' association's 
+					version, my responsibility was to create a GUI, which would allow us to present the functionality for the other groups of the course. For the GUI, I used already in Python included tkinter. I had done only 
+					small doodlings with GUIs on Java Swing before, thus making the task very curious to learn more about.`
+				],
+				links: [
+					{ name: "Github", url: "https://github.com/asteriskiry/ilmot-plaseeraus"}
+				]}
 		]
 		setFocusedProject(initialProjects[0])
 		setProjects(projects.concat(initialProjects))
