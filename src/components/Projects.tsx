@@ -84,7 +84,7 @@ const Projects: React.FC = () => {
 	}
 
 	return (
-		<div className="projectsMainContainer">
+		<div className="mainContainer">
 			<div className="projectsLeftContainer">
 				<ul className="projectsVertNav">
 					<h2 className="projects">Projects</h2>

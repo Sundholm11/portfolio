@@ -43,18 +43,16 @@ hr.divider {
 	color: gray;
 }
 
-div.projectsMainContainer {
-	margin: 5% 10% 10%;
-	border-radius: 25px;
-}
-
 div.projectsRightContainer {
+	display: block;
 	width: 69%;
 	margin-left: 30%;
 	height: 700px;
 }
 
 div.projectsLeftContainer {
+	display: block;
+	float: left;
 	width: 24%;
 	margin-left: 1%;
 }

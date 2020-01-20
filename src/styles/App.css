@@ -18,3 +18,8 @@ div.homeContainer {
 	padding: 250px 0;
 	background-color: rgb(27, 28, 29);
 }
+
+div.mainContainer {
+	padding: 5% 10% 10%;
+	height: 700px;
+}
