@@ -2,13 +2,27 @@ div.aboutLeftContainer {
 	display: block;
 	float: left;
 	width: 24%;
+	margin-top: 15%;
 	margin-left: 1%;
-	border: solid;
 }
 
 div.aboutRightContainer {
 	display: block;
 	width: 69%;
+	margin-top: 15%;
 	margin-left: 30%;
-	border: solid;
+}
+
+h2.about {
+	margin-left: 3%;
+	text-align: left;
+	font-size: 200%;
+	font-weight: lighter;
+}
+
+p.aboutDescription {
+	color: black;
+	text-align: left;
+	font-weight: lighter;
+	margin-bottom: 10%;
 }
