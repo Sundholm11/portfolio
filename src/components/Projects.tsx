@@ -84,7 +84,7 @@ const Projects: React.FC = () => {
 	}
 
 	return (
-		<div className="mainContainer">
+		<div className="mainContainer" style={{ backgroundColor: "#f8f8f8" }}>
 			<div className="projectsLeftContainer">
 				<ul className="projectsVertNav">
 					<h2 className="projects">Projects</h2>
