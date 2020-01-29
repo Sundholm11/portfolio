@@ -11,7 +11,8 @@ const Navbar: React.FC = () => {
 		<ul className="navBar">
 			<li className="navBar" onClick={() => scrollWindow(0)}><p>Home</p></li>
 			<li className="navBar" onClick={() => scrollWindow(625)}><p>About me</p></li>
-			<li className="navBar" onClick={() => scrollWindow(1525)}><p>Projects</p></li>
+			<li className="navBar" onClick={() => scrollWindow(1500)}><p>Projects</p></li>
+			<li className="navBar" onClick={() => scrollWindow(2350)}><p>Experience</p></li>
 		</ul>
 	)
 }

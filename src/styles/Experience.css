@@ -1,0 +1,62 @@
+h2.exp {
+	float: left;
+	width: auto;
+	margin: 5% 0 5%;
+	padding-right: 60%;
+	font-size: 200%;
+	font-weight: lighter;
+}
+
+p.exp {
+	padding: 3px 5px;
+	margin: 0;
+	text-align: left;
+}
+
+p.meter {
+	padding: 0px 5px 3px;
+	margin: 5% 0 0 0;
+	text-align: left;
+}
+
+div.expContainer {
+	float: left;
+	width: 31%;
+    height: 100%;
+	margin-left: 1%;
+}
+
+ul.expUl {
+	width: 100%;
+	padding: 0 3%;
+	margin: 0;
+	float: left;
+	list-style-type: none;
+	border-left: 1px solid;
+	border-color: gray;
+}
+
+li.expLi {
+	margin: 15px 0;
+	padding: 15px 0;
+}
+
+ul.meter {
+	margin-top: 25%;
+	padding-left: 0%;
+	list-style-type: none;
+}
+
+li.meter {
+	height: 8px;
+	border: solid 1.2px;
+	border-color: rgb(50, 50, 50);
+	border-radius: 12px;
+	padding: 10px;
+}
+
+.meter > span {
+	display: block;
+	border-radius: 12px;
+	height: 100%;
+}
