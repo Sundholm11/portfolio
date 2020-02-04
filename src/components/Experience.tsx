@@ -86,7 +86,7 @@ const Experience: React.FC = () => {
 				{visible ?
 				<ul className="meter">
 					{webdev.map(skill => (
-						<div>
+						<div key={Math.random() * 1000}>
 							<p className="meter">{skill.name}</p>
 							<li className="meter">
 								<span style={{ width: skill.fill, backgroundColor: skill.bgColor }} />
@@ -96,7 +96,7 @@ const Experience: React.FC = () => {
 				</ul> :
 				<ul className="meter">
 					{languages.map(skill => (
-						<div>
+						<div key={Math.random() * 1000}>
 							<p className="meter">{skill.name}</p>
 							<li className="meter">
 								<span style={{ width: skill.fill, backgroundColor: skill.bgColor }} />
