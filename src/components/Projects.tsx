@@ -5,6 +5,7 @@ import '../styles/Projects.css'
 import chatappBackground from '../images/chatapp.jpg'
 import fullstackBackground from '../images/fullstackopen2019img.jpg'
 import ilmoplaseBackground from '../images/ilmoplaseimg.jpg'
+import portfolioBackground from '../images/portfolio.jpg'
 
 interface Project {
 	id: number,
@@ -77,6 +78,16 @@ const Projects: React.FC = () => {
 				],
 				links: [
 					{ name: "Github", url: "https://github.com/asteriskiry/ilmot-plaseeraus"}
+				]},
+			{ id: 3, name: "Portfolio-page", bgImg: portfolioBackground, active: false,
+				description: [
+					`Created after I was done with the chat-app, I really felt like trying to make that own little room for myself and my projects. In my previous 
+					projects I had also always used ready stylesheets to for the customization of looks. For my own homepages, I wanted to make it all from bottom
+					to the top, out of scratch. I thought about familiarizing myself with TypeScript version of React for the portfolio page, but turns out the most
+					time consuming task would be thinking the visual layout of the page, and getting to know CSS.`
+				],
+				links: [
+					{ name: "Github", url: "https://github.com/Sundholm11/portfolio"}
 				]}
 		]
 		setFocusedProject(initialProjects[0])
