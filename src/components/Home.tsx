@@ -4,7 +4,7 @@ import '../styles/App.css'
 
 const Home: React.FC = () => {
 	return (
-		<div className="homeContainer">
+		<div id="home" className="homeContainer">
 			<h1 className="home">Daniel's Portfolio page</h1>
 		</div>
 	)

@@ -5,7 +5,7 @@ import profilePic from '../images/pp.jpg'
 
 const AboutMe: React.FC = () => {
 	return (
-		<div className="mainContainer">
+		<div id="aboutme" className="mainContainer">
 			<div className="aboutLeftContainer">
                 <img src={profilePic} alt="Profile of Daniel"/>
                 <div>

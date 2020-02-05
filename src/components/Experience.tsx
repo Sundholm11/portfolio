@@ -38,7 +38,7 @@ const Experience: React.FC = () => {
 	}
 
 	return (
-		<div className="mainContainer">
+		<div id="experience" className="mainContainer">
 			<div className="expContainer">
 				<h2 className="exp">Education</h2>
 				<ul className="expUl">
