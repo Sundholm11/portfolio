@@ -50,3 +50,19 @@ li.info {
 	padding-left: 15px;
 	text-align: left;
 }
+
+@media only screen and (max-width: 500px) {
+	/* For mobile phones: */
+	div.aboutLeftContainer {
+		height: auto;
+		width: auto;
+		margin: 0 0 10%;
+		padding: 0;
+	}
+	div.aboutRightContainer {
+		height: auto;
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+}

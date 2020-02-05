@@ -23,3 +23,10 @@ div.mainContainer {
 	padding: 5% 10% 10%;
 	height: 650px;
 }
+
+@media only screen and (max-width: 500px) {
+	/* For mobile phones: */
+	div.mainContainer {
+		height: 100%;
+	}
+}

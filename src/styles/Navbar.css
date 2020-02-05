@@ -29,3 +29,13 @@ li.navBar:hover {
 	border-bottom-color: white;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 500px) {
+	/* For mobile phones: */
+	ul.navBar {
+		position: absolute;
+	}
+	li.navBar {
+		display: inline-block;
+	}
+}
