@@ -67,10 +67,9 @@ const Projects: React.FC = () => {
 				]},
 			{ id: 2, name: "Ilmot-plaseeraus", bgImg: ilmoplaseBackground, active: false,
 				description: [
-					`Perhaps one of the most interesting uni assignments this far that I've taken part of. We were tasked to make a project that was to be presented for all the other groups -super simple task, but to make 
-					it a slightly bit more interesting, together with my partner we thought about picking a project that would later benefit our students' association. As a first year students, we didn't have that much 
-					actual experience with coding yet, not to mention that Python wasn't our most used language by then. But after some small debates few some older students about a preferable -and doable- task, we decided 
-					to go for it.`,
+					`Perhaps one of the most interesting uni assignments this far that I've taken part of. We were tasked to make a project that was to be presented for all the other groups. Together with my partner we thought about 
+					picking a project that would later benefit our students' association. As a first year students, we didn't have that much actual experience with coding yet, not to mention that Python wasn't our most used language 
+					by then. But after some small debates few some older students about a preferable -and doable- task, we decided to go for it.`,
 					`Ilmot-plaseeraus is an automated seating generator for mainly sitz events - but cannot see a reason why one couldn't use it for other events as well with a little fine tuning. The placing algorithm, 
 					mostly created by my partner, will receive a list of persons, and return them in a sorted order for tables - taking things such as genders and friends to account. Not used for our students' association's 
 					version, my responsibility was to create a GUI, which would allow us to present the functionality for the other groups of the course. For the GUI, I used already in Python included tkinter. I had done only 
