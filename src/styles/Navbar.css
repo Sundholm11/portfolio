@@ -2,6 +2,15 @@ a.navBar {
 	text-decoration: none;
 	font-size: lighter;
 	color: white;
+	padding: 7px 0;	
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: rgb(27, 28, 29);
+}
+
+a.navBar:hover {
+	border-bottom-color: white;
+	cursor: pointer;
 }
 
 ul.navBar {
@@ -20,14 +29,7 @@ li.navBar {
 	text-align: center;
 	margin: 0px 10px;
 	padding: 16px 10px;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	border-bottom-color:  rgb(27, 28, 29);
-}
-
-li.navBar:hover {
-	border-bottom-color: white;
-	cursor: pointer;
+	
 }
 
 @media only screen and (max-width: 500px) {
