@@ -103,33 +103,44 @@ li.projectsVertNav:hover {
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
-	/* For mobile phones: */
+@media only screen and (max-width: 1050px) {
+	/* For tablet devices and half screen: */
+	div.backgroundProject {
+		width: auto;
+		height: 100%;
+	}
 	div.projectsRightContainer {
 		display: inline-block;
 		height: auto;
-		width: auto;
+		width: 65%;
 		margin: 0;
 		padding: 0;
 	}
 	div.projectsLeftContainer {
 		display: block;
 		height: auto;
-		width: auto;
+		width: 25%;
 		margin: 0;
 		padding: 0;
 	}
-	div.backgroundProject {
-		width: auto;
-		height: 100%;
-	}
 	div.focusedProject {
+		display: block;
 		height: auto;
 		width: auto;
 		margin: 0;
 		margin-bottom: 10%;
 		padding: 0;
 		border: none;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	/* For mobile phones additional tweaks: */
+	div.projectsRightContainer {
+		width: auto;
+	}
+	div.projectsLeftContainer {
+		width: auto;
 	}
 	p.focusedDescription {
 		margin: 0%;
