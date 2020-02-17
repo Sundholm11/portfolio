@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import AboutMe from './components/AboutMe'
 import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 const App: React.FC = () => {
 	return (
@@ -16,6 +17,7 @@ const App: React.FC = () => {
 			<AboutMe />
 			<Projects />
 			<Experience />
+			<Contact />
 		</div>
 	)
 }
