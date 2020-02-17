@@ -51,7 +51,7 @@ li.info {
 	text-align: left;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
 	/* For mobile phones: */
 	div.aboutLeftContainer {
 		height: auto;

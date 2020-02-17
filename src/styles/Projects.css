@@ -103,7 +103,7 @@ li.projectsVertNav:hover {
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1250px) {
 	/* For tablet devices and half screen: */
 	div.backgroundProject {
 		width: auto;
@@ -134,7 +134,7 @@ li.projectsVertNav:hover {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
 	/* For mobile phones additional tweaks: */
 	div.projectsRightContainer {
 		width: auto;
