@@ -12,7 +12,7 @@ interface Project {
 	name: string,
 	bgImg: string,
 	active: boolean,
-	description?: string[],
+	description?: JSX.Element[],
 	links?: Link[]
 }
 
@@ -41,13 +41,11 @@ const Projects: React.FC = () => {
 		const initialProjects = [
 			{ id: 0, name: "Chat-app", bgImg: chatappBackground, active: true,
 				description: [
-					`Fully functional chat-app. With the app, the user is able to send and receive messages from other connected users in real time, to exchange crucial information on the fly,
-					or to share that one last juicy joke. Those who weren't online back then can recap the messages through the chat history later.`,
-					`My first full fledged shot at a web project after the fullstackopen -course, and I was really happy throughout the whole development how I finally got the controls for myself. No longer tasks to follow, 
-					with super specific instructions, but that you could actually implement whatever and however you wanted right now. I started by building a rough React frontside for the project, following very quickly with 
-					redux infused state containment before moving on to the backend. For the back I wanted to go for Node.js with Express framework, that I've got to practice during the course as well, but also picking up 
-					Socket.io to handle the connections between users and the server. It took a little time to get to know Socket.io, but proved itself really worth it. As a finishing touch, I styled the frontend with some components 
-					from Semantic UI.`
+					<p className="focusedDescription">Fully functional chat-app. With the app, the user is able to send and receive messages from other connected users in real time, to exchange crucial information on the fly,
+					or to share that one last juicy joke. Those who weren't online back then can recap the messages through the chat history later.</p>,
+					<p className="focusedDescription"><span style={{ color: "darkcyan" }}>React</span> frontside, followed very quickly with <span style={{ color: "#764abc" }}>Redux</span> infused state containment. 
+					Backend on <span style={{ color: "#026e00" }}>Node.js</span> with <span style={{ color: "#259dff" }}>Express</span> framework - connected to a <span style={{ color: "#026e00" }}>Mongo</span> database. 
+					Hot calls through the line handled by <span style={{ color: "#616161" }}>Socket.io</span>, whilst everything visually astonishing is provided by <span style={{ color: "darkcyan" }}>Semantic UI</span></p>
 				],
 				links: [
 					{ name: "Github", url: "https://github.com/Sundholm11/chat-app" },
@@ -55,35 +53,28 @@ const Projects: React.FC = () => {
 				]},
 			{ id: 1, name: "Fullstackopen 2019", bgImg: fullstackBackground, active: false, 
 				description: [
-					`Fullstackopen 2019, organized by the University of Helsinki, was one of the heaviest courses that I've taken part of. At the start of the course, I had only a very basic understanding of how JS, CSS 
-					and HTML even work. After 125 hours of sometimes pleasant ride, but the other half being the bumpy sweat and tears ride, I can say it was totally worth it. My understanding of web development is on a 
-					completely new higher level, whilst my skills with the use of JS have risen incredibly. I've got to known the beauties of React and Redux, with competent use of Node.js with Express for the backend 
-					side development as well.`,
-					`During the fullstackopen, I was tasked to make several smaller pages filling few requirements to show off that I've learned those things. At times I wasn't super filled with eagerness to carry out 
-					the same things over and over again. But however inspired by this course, and shortly after it, I managed to start working on my first full project, the chat-app.`
+					<p className="focusedDescription">Fullstackopen 2019, organized by the University of Helsinki, featuring a deep dive on modern web-development. The course covered a plenty of tips and topics, and also gave a very comprehensive guide 
+					on <span style={{ color: "darkcyan" }}>React</span> based web-application development</p>,
+					<p className="focusedDescription">During the fullstackopen, I got familiar with techniques and libraries such as <span style={{ color: "darkcyan" }}>React</span>, <span style={{ color: "#764abc" }}>Redux</span>, <span style={{ color: "#026e00" }}>Node.js</span> with <span style={{ color: "#259dff" }}>Express</span> based 
+					backend development, and how to handle it with <span style={{ color: "#026e00" }}>Mongo DB</span></p>
 				],
 				links: [
 					{ name: "Github", url: "https://github.com/Sundholm11/fullstackopen2019" }
 				]},
 			{ id: 2, name: "Ilmot-plaseeraus", bgImg: ilmoplaseBackground, active: false,
 				description: [
-					`Perhaps one of the most interesting uni assignments this far that I've taken part of. We were tasked to make a project that was to be presented for all the other groups. Together with my partner we thought about 
-					picking a project that would later benefit our students' association. As a first year students, we didn't have that much actual experience with coding yet, not to mention that Python wasn't our most used language 
-					by then. But after some small debates few some older students about a preferable -and doable- task, we decided to go for it.`,
-					`Ilmot-plaseeraus is an automated seating generator for mainly sitz events - but cannot see a reason why one couldn't use it for other events as well with a little fine tuning. The placing algorithm, 
-					mostly created by my partner, will receive a list of persons, and return them in a sorted order for tables - taking things such as genders and friends to account. Not used for our students' association's 
-					version, my responsibility was to create a GUI, which would allow us to present the functionality for the other groups of the course. For the GUI, I used already in Python included tkinter. I had done only 
-					small doodlings with GUIs on Java Swing before, thus making the task very curious to learn more about.`
+					<p className="focusedDescription">Ilmot-plaseeraus is an automated seating generator for mainly sitz events - but cannot see a reason why one couldn't use it for other events as well with a little fine tuning.</p>,
+					<p className="focusedDescription">The placing algorithm, mostly created by my partner, will receive a list of persons, and return them in a sorted order for tables - taking things such as genders and friends to account. My main responsibility was to create a GUI, which would allow us to present the functionality 
+					visually for the others. For the GUI, I used <span style={{ color: "#4682b4" }}>Python</span> with tkinter.</p>
 				],
 				links: [
 					{ name: "Github", url: "https://github.com/asteriskiry/ilmot-plaseeraus"}
 				]},
 			{ id: 3, name: "Portfolio-page", bgImg: portfolioBackground, active: false,
 				description: [
-					`Created after I was done with the chat-app, I really felt like trying to make that own little room for myself and my projects. In my previous 
-					projects I had also always used ready stylesheets to for the customization of looks. For my own homepages, I wanted to make it all from bottom
-					to the top, out of scratch. I thought about familiarizing myself with TypeScript version of React for the portfolio page, but turns out the most
-					time consuming task would be thinking the visual layout of the page, and getting to know CSS.`
+					<p className="focusedDescription">Created after I was done with the chat-app, I really felt like trying to make that own little room for myself and my projects.</p>,
+					<p className="focusedDescription">For my own homepages, I wanted to make it all from bottom to the top, out of scratch. I thought about familiarizing myself with <span style={{ color: "darkcyan" }}>TypeScript</span> version 
+					of <span style={{ color: "darkcyan" }}>React</span> for the portfolio page, but turns out the most time consuming task would be thinking the visual layout of the page, and getting to know <span style={{ color: "#764abc" }}>CSS</span>.</p>
 				],
 				links: [
 					{ name: "Github", url: "https://github.com/Sundholm11/portfolio"}
@@ -118,7 +109,7 @@ const Projects: React.FC = () => {
 					{focusedProject?.description?.map(part => {
 						return (
 							<div key={Math.random() * 1000}>
-								<p className="focusedDescription">{part}</p>
+								{ part }
 								<br/>
 							</div>
 						)})}

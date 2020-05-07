@@ -18,10 +18,10 @@ const Experience: React.FC = () => {
 	}, [])
 
 	const webdevSkills = [
-		{ name: "React", fill: "75%", bgColor: "lightskyblue" },
-		{ name: "Express", fill: "55%", bgColor: "dodgerblue" },
+		{ name: "React", fill: "75%", bgColor: "#61dafb" },
+		{ name: "Express", fill: "55%", bgColor: "#259dff" },
 		{ name: "Socket.IO", fill: "35%", bgColor: "gray" },
-		{ name: "Mongo DB", fill: "25%", bgColor: "seagreen" }
+		{ name: "Mongo DB", fill: "25%", bgColor: "#13aa52" }
 	]
 
 	const languageSkills = [
