@@ -6,6 +6,7 @@ import chatappBackground from '../images/chatapp.jpg'
 import fullstackBackground from '../images/fullstackopen2019img.jpg'
 import ilmoplaseBackground from '../images/ilmoplaseimg.jpg'
 import portfolioBackground from '../images/portfolio.jpg'
+import sportsBackground from '../images/sportscalendar.jpg'
 
 interface Project {
 	id: number,
@@ -78,6 +79,15 @@ const Projects: React.FC = () => {
 				],
 				links: [
 					{ name: "Github", url: "https://github.com/Sundholm11/portfolio"}
+				]},
+			{ id: 4, name: "Sportscalendar", bgImg: sportsBackground, active: false,
+				description: [
+					<p className="focusedDescription">Sportscalendar provides quick and easy view over daily sports activies around CampusSports' gyms and halls.</p>,
+					<p className="focusedDescription">My first project that is using the magics of <span style={{ color: "#41b883" }}>Vue</span> for the frontend. Backend is mostly just a quick <span style={{ color: "#259dff" }}>Express</span> fuelled API, responsible for
+					making the retrieving requests for my custom built webscrapers</p>
+				],
+				links: [
+					{ name: "Github", url: "https://github.com/Sundholm11/sportscalendar"}
 				]}
 		]
 		setFocusedProject(initialProjects[0])

@@ -20,16 +20,19 @@ const Experience: React.FC = () => {
 	const webdevSkills = [
 		{ name: "React", fill: "75%", bgColor: "#61dafb" },
 		{ name: "Express", fill: "55%", bgColor: "#259dff" },
+		{ name: "Vue", fill: "55%", bgColor: "#41b883"},
+		{ name: "TypeScript React", fill: "45%", bgColor: "#294e80"},
 		{ name: "Socket.IO", fill: "35%", bgColor: "gray" },
-		{ name: "Mongo DB", fill: "25%", bgColor: "#13aa52" }
+		{ name: "Mongo DB", fill: "25%", bgColor: "#13aa52" },
 	]
 
 	const languageSkills = [
 		{ name: "JS", fill: "75%", bgColor: "#f1e05a" },
 		{ name: "Java", fill: "55%", bgColor: "darkgoldenrod" },
-		{ name: "Python", fill: "35%", bgColor: "steelblue" },
-		{ name: "HTML", fill: "35%", bgColor: "chocolate" },
-		{ name: "CSS", fill: "30%", bgColor: "darkslateblue" }
+		{ name: "Python", fill: "45%", bgColor: "steelblue" },
+		{ name: "HTML", fill: "45%", bgColor: "chocolate" },
+		{ name: "TypeScript", fill: "45%", bgColor: "#294e80" },
+		{ name: "CSS", fill: "35%", bgColor: "darkslateblue" }
 	]
 
 	const initSkills = () => {
