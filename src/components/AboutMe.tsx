@@ -4,6 +4,8 @@ import '../styles/AboutMe.css'
 import profilePic from '../images/pp.jpg'
 
 const AboutMe: React.FC = () => {
+    const age = new Date(new Date().getTime() - new Date(1998, 7, 11).getTime()).getFullYear() - 1970
+
 	return (
 		<div id="aboutme" className="mainContainer">
 			<div className="aboutLeftContainer">
@@ -12,7 +14,7 @@ const AboutMe: React.FC = () => {
                     <ul className="info">
                         <li className="info">Name: Daniel Sundholm</li>
                         <hr />
-                        <li className="info">Age: 21 Years Old</li>
+                        <li className="info">Age: {age} Years Old</li>
                         <hr />
                         <li className="info">Location: Turku</li>
                     </ul>
@@ -22,7 +24,7 @@ const AboutMe: React.FC = () => {
                 <div>
                     <h2 className="about">About me</h2>
                     <p className="aboutDescription">
-                        I'm a 21-years old lovely fella from Turku. Three years ago I graduated from the Forssa Upper Secondary school, 
+                        I'm a {age}-years old lovely fella from Turku. Three years ago I graduated from the Forssa Upper Secondary school, 
                         after which I spent the next year doing my military service. Right now I'm studying Computer Science at the University of Turku 
                         for my second semester. During my free time, I enjoy hanging out with my good friends and doing all kinds of sports. But also just 
                         having that peaceful evening at home, watching Netflix or browsing the web, is pleasant.
