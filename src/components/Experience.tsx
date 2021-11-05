@@ -64,6 +64,11 @@ const Experience: React.FC = () => {
 				<h2 className="exp">Experience</h2>
 				<ul className="expUl">
 					<li className="expLi">
+						<p className="exp">Ambientia oy</p>
+						<p className="exp">Junior Software Developer</p>
+						<p className="exp">Summer 2021 - present</p>
+					</li>
+					<li className="expLi">
 						<p className="exp">Lounea oy</p>
 						<p className="exp">IT Support</p>
 						<p className="exp">Summer 2019</p>
