@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import '../styles/Projects.css'
+import '../styles/Projects.scss'
 
 import chatappBackground from '../images/chatapp.jpg'
 import fullstackBackground from '../images/fullstackopen2019img.jpg'
@@ -42,9 +42,9 @@ const Projects: React.FC = () => {
 		const initialProjects = [
 			{ id: 0, name: "Chat-app", bgImg: chatappBackground, active: true,
 				description: [
-					<p className="focusedDescription">Fully functional chat-app. With the app, the user is able to send and receive messages from other connected users in real time, to exchange crucial information on the fly,
+					<p>Fully functional chat-app. With the app, the user is able to send and receive messages from other connected users in real time, to exchange crucial information on the fly,
 					or to share that one last juicy joke. Those who weren't online back then can recap the messages through the chat history later.</p>,
-					<p className="focusedDescription"><span style={{ color: "darkcyan" }}>React</span> frontside, followed very quickly with <span style={{ color: "#764abc" }}>Redux</span> infused state containment. 
+					<p><span style={{ color: "darkcyan" }}>React</span> frontside, followed very quickly with <span style={{ color: "#764abc" }}>Redux</span> infused state containment. 
 					Backend on <span style={{ color: "#026e00" }}>Node.js</span> with <span style={{ color: "#259dff" }}>Express</span> framework - connected to a <span style={{ color: "#026e00" }}>Mongo</span> database. 
 					Hot calls through the line handled by <span style={{ color: "#616161" }}>Socket.io</span>, whilst everything visually astonishing is provided by <span style={{ color: "darkcyan" }}>Semantic UI</span></p>
 				],
@@ -54,9 +54,9 @@ const Projects: React.FC = () => {
 				]},
 			{ id: 1, name: "Fullstackopen 2019", bgImg: fullstackBackground, active: false, 
 				description: [
-					<p className="focusedDescription">Fullstackopen 2019, organized by the University of Helsinki, featuring a deep dive on modern web-development. The course covered a plenty of tips and topics, and also gave a very comprehensive guide 
+					<p>Fullstackopen 2019, organized by the University of Helsinki, featuring a deep dive on modern web-development. The course covered a plenty of tips and topics, and also gave a very comprehensive guide 
 					on <span style={{ color: "darkcyan" }}>React</span> based web-application development</p>,
-					<p className="focusedDescription">During the fullstackopen, I got familiar with techniques and libraries such as <span style={{ color: "darkcyan" }}>React</span>, <span style={{ color: "#764abc" }}>Redux</span>, <span style={{ color: "#026e00" }}>Node.js</span> with <span style={{ color: "#259dff" }}>Express</span> based 
+					<p>During the fullstackopen, I got familiar with techniques and libraries such as <span style={{ color: "darkcyan" }}>React</span>, <span style={{ color: "#764abc" }}>Redux</span>, <span style={{ color: "#026e00" }}>Node.js</span> with <span style={{ color: "#259dff" }}>Express</span> based 
 					backend development, and how to handle it with <span style={{ color: "#026e00" }}>Mongo DB</span></p>
 				],
 				links: [
@@ -64,8 +64,8 @@ const Projects: React.FC = () => {
 				]},
 			{ id: 2, name: "Ilmot-plaseeraus", bgImg: ilmoplaseBackground, active: false,
 				description: [
-					<p className="focusedDescription">Ilmot-plaseeraus is an automated seating generator for mainly sitz events - but cannot see a reason why one couldn't use it for other events as well with a little fine tuning.</p>,
-					<p className="focusedDescription">The placing algorithm, mostly created by my partner, will receive a list of persons, and return them in a sorted order for tables - taking things such as genders and friends to account. My main responsibility was to create a GUI, which would allow us to present the functionality 
+					<p>Ilmot-plaseeraus is an automated seating generator for mainly sitz events - but cannot see a reason why one couldn't use it for other events as well with a little fine tuning.</p>,
+					<p>The placing algorithm, mostly created by my partner, will receive a list of persons, and return them in a sorted order for tables - taking things such as genders and friends to account. My main responsibility was to create a GUI, which would allow us to present the functionality 
 					visually for the others. For the GUI, I used <span style={{ color: "#4682b4" }}>Python</span> with tkinter.</p>
 				],
 				links: [
@@ -73,8 +73,8 @@ const Projects: React.FC = () => {
 				]},
 			{ id: 3, name: "Portfolio-page", bgImg: portfolioBackground, active: false,
 				description: [
-					<p className="focusedDescription">Created after I was done with the chat-app, I really felt like trying to make that own little room for myself and my projects.</p>,
-					<p className="focusedDescription">For my own homepages, I wanted to make it all from bottom to the top, out of scratch. I thought about familiarizing myself with <span style={{ color: "darkcyan" }}>TypeScript</span> version 
+					<p>Created after I was done with the chat-app, I really felt like trying to make that own little room for myself and my projects.</p>,
+					<p>For my own homepages, I wanted to make it all from bottom to the top, out of scratch. I thought about familiarizing myself with <span style={{ color: "darkcyan" }}>TypeScript</span> version 
 					of <span style={{ color: "darkcyan" }}>React</span> for the portfolio page, but turns out the most time consuming task would be thinking the visual layout of the page, and getting to know <span style={{ color: "#764abc" }}>CSS</span>.</p>
 				],
 				links: [
@@ -82,8 +82,8 @@ const Projects: React.FC = () => {
 				]},
 			{ id: 4, name: "Sportscalendar", bgImg: sportsBackground, active: false,
 				description: [
-					<p className="focusedDescription">Sportscalendar provides quick and easy view over daily sports activies around CampusSports' gyms and halls.</p>,
-					<p className="focusedDescription">My first project that is using the magics of <span style={{ color: "#41b883" }}>Vue</span> for the frontend. Backend is mostly just a quick <span style={{ color: "#259dff" }}>Express</span> fuelled API, responsible for
+					<p>Sportscalendar provides quick and easy view over daily sports activies around CampusSports' gyms and halls.</p>,
+					<p>My first project that is using the magics of <span style={{ color: "#41b883" }}>Vue</span> for the frontend. Backend is mostly just a quick <span style={{ color: "#259dff" }}>Express</span> fuelled API, responsible for
 					making the retrieving requests for my custom built webscrapers</p>
 				],
 				links: [
@@ -97,15 +97,14 @@ const Projects: React.FC = () => {
 	return (
 		<div id="projects" className="mainContainer" style={{ backgroundColor: "#f8f8f8" }}>
 			<div className="projectsLeftContainer">
-				<ul className="projectsVertNav">
-					<h2 className="projects">Projects</h2>
-					<p className="descriptionProjects">All those fancy little things that I've spent countless of hours,
+				<ul>
+					<h2>Projects</h2>
+					<p>All those fancy little things that I've spent countless of hours,
 						day and night, to create
 					</p>
-					<hr className="divider" />
+					<hr/>
 					{projects.map( (project: any) =>
 					<li key={project.id}
-						className="projectsVertNav"
 						value={project.id}
 						onClick={handleProjectChange}>
 							{project.name}
@@ -115,7 +114,7 @@ const Projects: React.FC = () => {
 			</div>
 			<div className="projectsRightContainer">
 				<div className="focusedProject">
-					<h2 className="focusedProject">{focusedProject?.name}</h2>
+					<h2>{focusedProject?.name}</h2>
 					{focusedProject?.description?.map(part => {
 						return (
 							<div key={Math.random() * 1000}>
@@ -125,7 +124,7 @@ const Projects: React.FC = () => {
 						)})}
 					{focusedProject?.links?.map(link => {
 						return (
-							<a key={Math.random() * 1000} className="focusedLink" href={`${link.url}`}>{link.name}</a>
+							<a key={Math.random() * 1000} href={`${link.url}`}>{link.name}</a>
 						)})}
 				</div>
 				<div className="backgroundProject" style={{ backgroundImage: `url(${focusedProject?.bgImg})` }} />

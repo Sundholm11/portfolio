@@ -1,0 +1,80 @@
+div.expContainer {
+	float: left;
+	width: 32%;
+	margin-left: 1%;
+
+    p {
+        padding: 3px 5px;
+        margin: 0;
+        text-align: left;
+    }
+    
+    h2 {
+        margin: 5% 0 5%;
+        padding-right: 60%;
+        font-size: 200%;
+        font-weight: lighter;
+    }
+
+    ul.expUl {
+        padding: 0 3%;
+        margin: 0;
+        list-style-type: none;
+        border-left: 1px solid;
+        border-color: gray;
+
+        li {
+            margin: 15px 0;
+            padding: 15px 0;
+        }
+        
+    }
+
+    ul.skillView {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+
+        li {
+            display: inline-block;
+            margin: 0px 10px;
+
+            &:hover {
+                cursor: pointer;
+                border-bottom: solid 1px;
+            }
+        }
+    }
+
+    ul.meter {
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            height: 8px;
+            border: solid 1.2px;
+            border-color: rgb(50, 50, 50);
+            border-radius: 12px;
+            padding: 10px;
+            margin-bottom: 5%;
+
+            span {
+                display: block;
+                border-radius: 12px;
+                height: 100%;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 700px) {
+	/* For mobile phones: */
+	div.expContainer {
+        float: none;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 5%;
+	}
+}

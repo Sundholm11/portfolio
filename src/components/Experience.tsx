@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import '../styles/Experience.css'
+import '../styles/Experience.scss'
 
 interface Skills {
 	name: string,
@@ -43,60 +43,60 @@ const Experience: React.FC = () => {
 	return (
 		<div id="experience" className="mainContainer">
 			<div className="expContainer">
-				<h2 className="exp">Education</h2>
+				<h2>Education</h2>
 				<ul className="expUl">
-					<li className="expLi">
-						<p className="exp">University of Turku</p>
-						<p className="exp">Bachelor of Science</p>
-						<p className="exp">2018 - present</p>
+					<li>
+						<p>University of Turku</p>
+						<p>Bachelor of Science</p>
+						<p>2018 - present</p>
 					</li>
-					<li className="expLi">
-						<p className="exp">Forssa Upper Secondary</p>
-						<p className="exp">2015 - 2017</p>
+					<li>
+						<p>Forssa Upper Secondary</p>
+						<p>2015 - 2017</p>
 					</li>
-					<li className="expLi">
-						<p className="exp">Elementary School</p>
-						<p className="exp">2005 - 2015</p>
+					<li>
+						<p>Elementary School</p>
+						<p>2005 - 2015</p>
 					</li>
 				</ul>
 			</div>
 			<div className="expContainer">
-				<h2 className="exp">Experience</h2>
+				<h2>Experience</h2>
 				<ul className="expUl">
-					<li className="expLi">
-						<p className="exp">Ambientia oy</p>
-						<p className="exp">Junior Software Developer</p>
-						<p className="exp">Summer 2021 - present</p>
+					<li>
+						<p>Ambientia oy</p>
+						<p>Junior Software Developer</p>
+						<p>Summer 2021 - present</p>
 					</li>
-					<li className="expLi">
-						<p className="exp">Lounea oy</p>
-						<p className="exp">IT Support</p>
-						<p className="exp">Summer 2019</p>
+					<li>
+						<p>Lounea oy</p>
+						<p>IT Support</p>
+						<p>Summer 2019</p>
 					</li>
-					<li className="expLi">
-						<p className="exp">Autokeidas Forssa</p>
-						<p className="exp">Cashier / Veikkaus / Toto</p>
-						<p className="exp">Summer 2018</p>
+					<li>
+						<p>Autokeidas Forssa</p>
+						<p>Cashier / Veikkaus / Toto</p>
+						<p>Summer 2018</p>
 					</li>
-					<li className="expLi">
-						<p className="exp">SuperDrecksKëscht Luxembourg</p>
-						<p className="exp">Trainee</p>
-						<p className="exp">Spring 2017</p>
+					<li>
+						<p>SuperDrecksKëscht Luxembourg</p>
+						<p>Trainee</p>
+						<p>Spring 2017</p>
 					</li>
 				</ul>
 			</div>
 			<div className="expContainer">
-				<h2 className="exp">Skills</h2>
+				<h2>Skills</h2>
 				<ul className="skillView">
-					<li className="skillView" onClick={() => setVisible(true)}>Webdev</li>
-					<li className="skillView" onClick={() => setVisible(false)}>Languages</li>
+					<li onClick={() => setVisible(true)}>Webdev</li>
+					<li onClick={() => setVisible(false)}>Languages</li>
 				</ul>
 				{visible ?
 				<ul className="meter">
 					{webdev.map(skill => (
 						<div key={Math.random() * 1000}>
-							<p className="meter">{skill.name}</p>
-							<li className="meter">
+							<p>{skill.name}</p>
+							<li>
 								<span style={{ width: skill.fill, backgroundColor: skill.bgColor }} />
 							</li>
 						</div>
@@ -105,8 +105,8 @@ const Experience: React.FC = () => {
 				<ul className="meter">
 					{languages.map(skill => (
 						<div key={Math.random() * 1000}>
-							<p className="meter">{skill.name}</p>
-							<li className="meter">
+							<p>{skill.name}</p>
+							<li>
 								<span style={{ width: skill.fill, backgroundColor: skill.bgColor }} />
 							</li>
 						</div>
