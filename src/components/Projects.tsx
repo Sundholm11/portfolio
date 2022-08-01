@@ -46,7 +46,8 @@ const Projects: React.FC = () => {
 					or to share that one last juicy joke. Those who weren't online back then can recap the messages through the chat history later.</p>,
 					<p><span style={{ color: "darkcyan" }}>React</span> frontside, followed very quickly with <span style={{ color: "#764abc" }}>Redux</span> infused state containment. 
 					Backend on <span style={{ color: "#026e00" }}>Node.js</span> with <span style={{ color: "#259dff" }}>Express</span> framework - connected to a <span style={{ color: "#026e00" }}>Mongo</span> database. 
-					Hot calls through the line handled by <span style={{ color: "#616161" }}>Socket.io</span>, whilst everything visually astonishing is provided by <span style={{ color: "darkcyan" }}>Semantic UI</span></p>
+					Hot calls through the line handled by <span style={{ color: "#616161" }}>Socket.io</span>, whilst everything visually astonishing is provided by <span style={{ color: "darkcyan" }}>Semantic UI</span></p>,
+                    <p>And yes, I KNOW THE PROFILE PICTURES ARE CHANGING ALL THE TIME xD they're working as proof of concept rn</p>
 				],
 				links: [
 					{ name: "Github", url: "https://github.com/Sundholm11/chat-app" },
@@ -87,7 +88,8 @@ const Projects: React.FC = () => {
 					making the retrieving requests for my custom built webscrapers</p>
 				],
 				links: [
-					{ name: "Github", url: "https://github.com/Sundholm11/sportscalendar"}
+					{ name: "Github", url: "https://github.com/Sundholm11/sportscalendar"},
+					{ name: "Heroku/Deploy", url: "https://sport-cal.herokuapp.com/" }
 				]}
 		]
 		setFocusedProject(initialProjects[0])

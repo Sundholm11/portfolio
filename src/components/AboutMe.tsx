@@ -5,6 +5,7 @@ import profilePic from '../images/pp.jpg'
 
 const AboutMe: React.FC = () => {
     const age = new Date(new Date().getTime() - new Date(1998, 7, 11).getTime()).getFullYear() - 1970
+    const yearsSinceGraduation = new Date(Date.now() - new Date(2017, 5).getTime()).getFullYear() - 1970
 
 	return (
 		<div id="aboutme" className="mainContainer">
@@ -23,16 +24,17 @@ const AboutMe: React.FC = () => {
             <div className="aboutRightContainer">
                 <h2>About me</h2>
                 <p>
-                    I'm a {age}-years old lovely fella from Turku. Three years ago I graduated from the Forssa Upper Secondary school, 
-                    after which I spent the next year doing my military service. Right now I'm studying Computer Science at the University of Turku 
-                    for my second semester. During my free time, I enjoy hanging out with my good friends and doing all kinds of sports. But also just 
-                    having that peaceful evening at home, watching Netflix or browsing the web, is pleasant.
+                    I'm a {age}-years old lovely fella from Turku. {yearsSinceGraduation} years ago I graduated from the Forssa Upper Secondary school, 
+                    after which I spent the next year doing my military service. Right now I'm studying Computer Science at the University of Turku, working on my master's degree. 
+                    During my free time, I enjoy hanging out with my good friends and doing all kinds of sports. Peaceful evening at home, with videogames & Netflix & chill is also
+                    great though.
                 </p>
                 <p>
-                    Nowadays, I'm more or less busy with courses from my studies. Some of them being very interesting, such as learning more tips and tricks for 
-                    object oriented programming or threading and sockets. Some of them being not that much... eh, really wish I'd be done with my swedish course. But one 
-                    thing I'm happy about, I've learned to program in a very diverse field of stuff. Say, I've done a couple of projects for courses coding GUIs, using 
-                    Java and Python, but also during my free time I've had a change to practice web development using JS React.
+                    From uni I've had the chance to get to know basics of programming and stuff such ass OOP, multi-threading, sockets and gui creation. 
+                    I've also completed minor studies in math and geography. 
+                    During my free time I've had a chance to practice web development using JS React. I've also done couple of personal projects to hone my webdev skills.
+                    Nowadays I'm working as Junior Software Dev at Ambientia, and mostly working with VueJS on front, express on the back, and Elastic as the database.
+
                 </p>
             </div>
 		</div>
