@@ -4,6 +4,8 @@
 }
 
 div.homeContainer {
+    display: flex;
+    justify-content: center;
 	padding: 250px 0;
 	background-color: rgb(27, 28, 29);
 
@@ -11,12 +13,12 @@ div.homeContainer {
         color: white;
         background-color:rgb(27, 28, 29);
         padding: 20px;
-        margin: 0;
         vertical-align: middle;
         font-family: 'Segoe UI';
         font-size: 400%;
         font-weight: lighter;
     }
+    
 }
 
 div.mainContainer {
@@ -24,13 +26,45 @@ div.mainContainer {
 	height: 650px;
 }
 
+.typewriteContainer {
+    display: flex;
+}
+
+.typewriter {
+    display: inline-flex;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+      typing 2.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
 @media only screen and (max-width: 700px) {
 	/* For mobile phones: */
 	html, body {
 		overflow-x: hidden; 
 	}
-	
-	div.mainContainer {
-		height: 100%;
-	}
+
+    div.mainContainer {
+        height: 100%;
+    }
+
+    .typewriter {
+        white-space: normal;
+        animation: none;
+        border-right: none;
+    }
+
 }

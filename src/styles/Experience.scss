@@ -39,6 +39,7 @@ div.expContainer {
         li {
             display: inline-block;
             margin: 0px 10px;
+            border-bottom: solid 1px white;
 
             &:hover {
                 cursor: pointer;
@@ -75,6 +76,7 @@ div.expContainer {
         float: none;
 		width: 100%;
 		margin: 0;
-		margin-bottom: 5%;
+		margin-bottom: 40px;
+
 	}
 }
