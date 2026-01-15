@@ -1,6 +1,4 @@
-import React from 'react'
-
-import '../styles/App.scss'
+import '@styles/App.scss'
 
 const Home: React.FC = () => {
 	return (

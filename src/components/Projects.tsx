@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect, JSX } from 'react'
 
-import '../styles/Projects.scss'
+import chatappBackground from '@images/chatapp.jpg'
+import fullstackBackground from '@images/fullstackopen2019img.jpg'
+import ilmoplaseBackground from '@images/ilmoplaseimg.jpg'
+import portfolioBackground from '@images/portfolio.jpg'
+import sportsBackground from '@images/sportscalendar.jpg'
 
-import chatappBackground from '../images/chatapp.jpg'
-import fullstackBackground from '../images/fullstackopen2019img.jpg'
-import ilmoplaseBackground from '../images/ilmoplaseimg.jpg'
-import portfolioBackground from '../images/portfolio.jpg'
-import sportsBackground from '../images/sportscalendar.jpg'
+import '@styles/Projects.scss'
 
 interface Project {
 	id: number,
