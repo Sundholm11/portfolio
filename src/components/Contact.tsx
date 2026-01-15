@@ -1,6 +1,4 @@
-import React from 'react'
-
-import '../styles/Contact.scss'
+import '@styles/Contact.scss'
 
 const Contact: React.FC = () => {
 	return (

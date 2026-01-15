@@ -1,6 +1,4 @@
-import React from 'react'
-
-import '../styles/Navbar.scss'
+import '@styles/Navbar.scss'
 
 const Navbar: React.FC = () => {
 	return (

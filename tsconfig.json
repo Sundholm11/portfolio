@@ -1,12 +1,19 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@images/*": ["./images/*"],
+      "@styles/*": ["./styles/*"]
+    },
     "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -20,8 +27,9 @@
     "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true,
     "types": [
-        "react/next",
-        "react-dom/next"
+      "node",
+      "react",
+      "react-dom"
     ]
   },
   "include": [

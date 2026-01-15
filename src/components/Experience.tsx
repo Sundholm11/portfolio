@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
-import '../styles/Experience.scss'
+import '@styles/Experience.scss'
 
 interface Skills {
 	name: string,
