@@ -2,13 +2,14 @@ import path from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-export default defineConfig(() => ({
+export default defineConfig(({ command }) => ({
   build: {
-    outDir: 'build',
+    outDir: 'dist',
   },
   plugins: [
     react()
   ],
+  base: command === "build" ? "/portfolio/" : "/",
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
