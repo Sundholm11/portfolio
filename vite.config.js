@@ -9,7 +9,6 @@ export default defineConfig(({ command }) => ({
   plugins: [
     react()
   ],
-  base: command === "build" ? "/portfolio/" : "/",
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
